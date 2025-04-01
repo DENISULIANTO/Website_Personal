@@ -1,0 +1,63 @@
+* {
+  background-color: #000;
+}
+
+body-1 {
+  front-family: "georgia," Helvetica, sans-serif;
+  font-size: 20px;
+  color: #fff;
+}
+
+body-3 {
+  front-family: "georgia," Helvetica, sans-serif;
+  font-size: 15px;
+  color: #fff;
+}
+  
+body-4 {
+  front-family: "georgia," Helvetica, sans-serif;
+  font-size: 13px;
+  text-indent: 50px;
+  color: #fff;
+  line-height: 5px;
+}
+
+body-search
+.search a {
+  color: #fff;
+  text-decoration: none;
+  line-height: 700px;
+  border: 1px solid #fff;
+  padding: 10px;
+  border-radius: 20px;
+  writing-mode: horizontal-tb;
+}
+.search b {
+  font-size: 15px;
+  color: #fff;
+  line-height: 15px;  
+}
+
+
+
+body-rekam-vidio
+.simbol b {
+  font-size: 15px;
+  color: #fff;
+  line-height: 15px;  
+}
+
+
+body-5
+.simbol a{
+  color: #fff;
+  text-decoration: none;
+  line-height: 10px;
+}
+.simbol b {
+  font-size: 15px;
+  color: #fff;
+  line-height: 15px;
+}
+
+

@@ -1,0 +1,129 @@
+<!doctypo html>
+<html lang:"en">
+  <head>
+    <meta charset:"utf-8"  />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <title>PROFIL KELUARGA DENI</title>
+    
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  </head>
+  
+  
+  
+  
+  <body-1>
+    <center>
+      <b>SELAMAT DATANG DI KELUARGA DENI SULIANTO</b>
+    </center>
+  </body-1>
+  
+  
+  <body-2>
+    <center><img src="asset/img/gambar profil.png"></center>
+  </body-2>
+  
+  
+  <body-3>
+    <b>Anggota Keluarga :</b>
+  </body-3>
+  
+  
+  <body-4>
+    <p>*Deni Sulianto</p>
+    <p>*Anis Maulida</p>
+    <p>*Yasmine Nuria Lathifah</p>
+  </body-4>
+
+
+  <body-search>
+     <div class="search">
+      <b> Search :</b>
+      <a href="https://www.google.com/"> Telusuri atau ketik URL</a>
+    </div>
+  </body-search>
+  
+  <body-7>
+      <b> Klik dibawah ini untuk rekam vidio :</b>
+      <p>
+        <label for="videoFile">Upload a video:</label>
+        <input type="file" id="videoFile" capture="environment" accept="video/*" />
+      </p>
+  </body-7>
+  
+  
+  
+  
+  
+  <body-5>
+    <div class="simbol">
+      <b>Hubungi Kontak Kami :</b>
+      <p>
+        <button style="font-size:24p;color:#fffx">
+          <i class="fa fa-instagram" style="font-size:20px;color:#fff"></i>
+          <a href="https://www.instagram.com/deni.sulianto?igsh=MTgwMjFyZjdteW84eg=="></i>   Istagram</a>
+        </button>
+        
+        <button style="font-size:24p;color:#fffx">
+          <i class="fa fa-whatsapp" style="font-size: 20px;color:#fff"></i> 
+          <a href="https://wa.me/6282326627544">  WhatsApp</a>
+        </button>
+      </p>
+    </div>
+  </body-5>
+  
+  <body-6>
+     <script src="main.js"></script>
+  </body-6>
+
+<div class="">
+    <video autoplay="true" id="video-webcam" style="height: 500;color:#fff"> >
+        Izinkan untuk Mengakses Webcam untuk Demo
+    </video>
+    <button onclick="takeSnapshot()" style="font-size:7px;color:#fff">Ambil Gambar</button>
+</div>
+<script>
+    var video = document.querySelector("#video-webcam");
+
+    navigator.getUserMedia = navigator.getUserMedia || navigator.webkitGetUserMedia || navigator.mozGetUserMedia || navigator.msGetUserMedia || navigator.oGetUserMedia;
+
+    if (navigator.getUserMedia) {
+        navigator.getUserMedia({ video: true }, handleVideo, videoError);
+    }
+
+    function handleVideo(stream) {
+        video.src = window.URL.createObjectURL(stream);
+        console.log(stream);
+    }
+
+    function videoError(e) {
+        // do something
+        alert("Izinkan menggunakan webcam untuk demo!")
+    }
+
+    function takeSnapshot() {
+        var img = document.createElement('img');
+        var context;
+        var width = video.offsetWidth
+                , height = video.offsetHeight;
+
+        canvas = document.createElement('canvas');
+        canvas.width = width;
+        canvas.height = height;
+
+        context = canvas.getContext('2d');
+        context.drawImage(video, 0, 0, width, height);
+
+        img.src = canvas.toDataURL('image/png');
+        document.body.appendChild(img);
+    }
+
+</script>
+
+
+
+
+</html>
